@@ -7,8 +7,8 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "iot";
-const char* password = "mrfunkfunk";
+const char* ssid     = "Fuck u";
+const char* password = "lovro135";
 //NEW URL: https://vejret.stenomuseet.dk/data/stenomuseet.htm
 const char* host = "vejret.stenomuseet.dk";
 // This is the path to the page we want on the server:
@@ -103,6 +103,6 @@ void loop() {
   Serial.println();
   Serial.println("closing connection");
   
-  delay(5*60*1000); //run every 5 minutes (in milliseconds)
+  delay(30*1000); //run every 1/2 minutes (in milliseconds)(5*60*1000 for 3 min)
 
 }
