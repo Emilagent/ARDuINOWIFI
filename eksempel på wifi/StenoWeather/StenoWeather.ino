@@ -7,8 +7,8 @@
 
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "JustUseYourPhone";
-const char* password = "PhonesHaveWifi";
+const char* ssid     = "iot";
+const char* password = "mrfunkfunk";
 //NEW URL: https://vejret.stenomuseet.dk/data/stenomuseet.htm
 const char* host = "vejret.stenomuseet.dk";
 // This is the path to the page we want on the server:
@@ -92,9 +92,9 @@ void loop() {
 
   if(line!="") //if data exists
   {
-  vindchill=vindchillString.toFloat(); //parse the string as a float.
-  Serial.println("String: " + String(vindchillString)); //test report
-  Serial.println("float: " + String(vindchill)); //test report
+    vindchill=vindchillString.toFloat(); //parse the string as a float.
+    Serial.println("String: " + String(vindchillString)); //test report
+    Serial.println("float: " + String(vindchill)); //test report
     
     //// THIS IS WHERE I WOULD DO SOMETHING WITH THE VINDCHILL number..  maybe blink a thing, or close the windows when it's cold.
     
